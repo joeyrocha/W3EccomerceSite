@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.pencil-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    padding: 8px;
+    height: 40px;
+}
+.pencil{
+    text-decoration: underline;
+    color: white;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.navBar{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgb(96, 161, 96);
+    height: 80px;
+    padding: 0 20px;
+}
+
+.navBarItems{
+    display: flex;
+    margin-left: 50px;
+    list-style-type: none;
+    
+}
+
+.navBarItems li{
+    text-align: right;
+    margin-right:30px;
+    color: white;
+}
+
+.logoNav img{
+    width: 100%;
+    height: 50px;
+}
