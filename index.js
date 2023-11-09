@@ -1,14 +1,18 @@
-let slideIndex = 0;
-showSlides();
+        // Function to add the "shaking" class to start the animation
+        function shakeElement() {
+            const pencilElement = document.getElementById('shake-me');
+            pencilElement.classList.add('shaking');
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-    }
-    slideIndex++;
-        if (slideIndex > slides.length) {slideIndex = 1}
-        slides[slideIndex-1].style.display = "block";
-        setTimeout(showSlides, 5000); // Change image every 2 seconds
-    } 
+            // Remove the shaking class after the animation duration
+            setTimeout(() => {
+                pencilElement.classList.remove('shaking');
+            }, 500); // 500ms is the duration of the animation
+        }
+
+        // Automatically trigger the shake animation when the page loads
+        window.addEventListener('load', () => {
+            shakeElement();
+
+            // Repeatedly trigger the animation every 10 seconds
+            setInterval(shakeElement, 7000); // 10,000ms = 10 seconds
+        });

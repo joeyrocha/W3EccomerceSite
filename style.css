@@ -15,10 +15,36 @@
     background-color: rgb(182, 72, 72);
     padding: 8px;
     height: 40px;
+
 }
 .pencil{
     text-decoration: underline;
     color: white;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-10px);
+    }
+    40% {
+        transform: translateX(10px);
+    }
+    60% {
+        transform: translateX(-10px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.pencil.shaking {
+    animation: shake 0.5s ease-in-out;
 }
 
 .header{
@@ -89,7 +115,7 @@ button:hover {
 }
 
 .planetMoss {
-    flex: 1; /* Share the available space with the adjacent element */
+     /* Share the available space with the adjacent element */
     text-align: center; /* Center the image horizontally */
 }
 
@@ -100,16 +126,17 @@ button:hover {
 /* product card start */
 .card-container {
     display: flex;
-    justify-content: space-between; /* Create space between cards */
+    justify-content: space-evenly; /* Create space between cards */
 }
 
 .card {
-    width: calc(33.33% - 20px); /* Adjust the width to fit 3 cards with space between */
+    width: calc(25% - 20px); /* Adjust the width to fit 3 cards with space between */
     border: 1px solid #ccc;
     padding: 15px;
     text-align: center;
     margin-right: 10px; /* Add margin to create space between cards */
     box-sizing: border-box;
+    
 }
 
 .card:last-child {
@@ -125,18 +152,18 @@ button:hover {
     font-size: 20px;
 }
 
-button {
+.addCart{
     background-color: #4CAF50;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 button:hover {
     background-color: #45a049;
 }
-
 
 
 
