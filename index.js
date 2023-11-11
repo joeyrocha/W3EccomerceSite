@@ -14,5 +14,5 @@
             shakeElement();
 
             // Repeatedly trigger the animation every 10 seconds
-            setInterval(shakeElement, 7000); // 10,000ms = 10 seconds
+            setInterval(shakeElement, 3000); // 10,000ms = 10 seconds
         });

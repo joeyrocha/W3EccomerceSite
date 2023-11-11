@@ -116,6 +116,7 @@ button:hover {
 
 .planetMoss {
      /* Share the available space with the adjacent element */
+
     text-align: center; /* Center the image horizontally */
 }
 
@@ -236,3 +237,44 @@ button:hover {
 }
 
 /* Style the footer section */
+
+
+@media (max-width: 650px) {
+    .upperPage {
+      flex-direction: column; /* Stack the items vertically on smaller screens */
+    }
+
+    .mossBallHp,
+    .planetMoss {
+        width: 100%; /* Make both sections take full width on smaller screens */
+        padding: 10px; /* Add some spacing around the content */
+        text-align: center;
+    }
+
+    .mossPlanetImage {
+        height: auto; /* Ensure the image is responsive */
+    }
+
+    .navBar {
+        flex-direction: column; /* Stack the navigation items vertically */
+        height: auto; /* Auto height for the navigation bar */
+    }
+
+    .navBarItems {
+        margin: 0; /* Remove the left margin for navigation items */
+    }
+
+    .footer-section {
+        flex-direction: column; /* Stack footer sections vertically */
+        align-items: center; /* Center the items horizontally */
+    }
+
+    .card-container {
+        flex-direction: column; /* Stack the cards vertically on smaller screens */
+    }
+
+    .card {
+        width: 80%; /* Make cards take full width on smaller screens */
+        margin-left: 50px; /* Remove margin between cards on smaller screens */
+    }
+}
